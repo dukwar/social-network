@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e71681da-9742-444a-9416-9689be34b105" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/Tahoma.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/friends.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/group.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/group2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/music.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/news.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newspaper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/play-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/settings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/speech-bubble.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/user (2).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/user.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1n1CBre0HZDBR5dLveBI9zThFm6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\React\projects\my-app\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\React\projects\my-app\src\img" />
+      <recent name="C:\React\projects\my-app\src\fonts" />
+      <recent name="C:\React\projects\my-app\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e71681da-9742-444a-9416-9689be34b105" name="Default Changelist" comment="" />
+      <created>1610548078612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610548078612</updated>
+      <workItem from="1610548102542" duration="3929000" />
+      <workItem from="1610556222467" duration="24754000" />
+      <workItem from="1610666978582" duration="1442000" />
+      <workItem from="1610715742768" duration="16404000" />
+      <workItem from="1610746149198" duration="797000" />
+      <workItem from="1610807027303" duration="16129000" />
+      <workItem from="1610844093846" duration="7789000" />
+      <workItem from="1610896265031" duration="88000" />
+      <workItem from="1610896385070" duration="363000" />
+      <workItem from="1610896765843" duration="13078000" />
+      <workItem from="1610982539456" duration="357000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
