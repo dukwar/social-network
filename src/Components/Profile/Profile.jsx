@@ -1,14 +1,5 @@
 import React from "react";
-import "./Profile.module.css"
-import {Music} from "./Sprite_1";
-import {User} from "./Sprite_1";
-import {News} from "./Sprite_1";
-import {Messenger} from "./Sprite_1";
-import {Photos} from "./Sprite_1";
-import {Video} from "./Sprite_1";
-import {Community} from "./Sprite_1";
-import {Friends} from "./Sprite_1";
-import {Settings} from "./Sprite_1";
+import {Music, News, Photos, Video} from "./Sprite_1";
 import cl from "./Profile.module.css"
 import MyPosts from "./MyPosts/MyPosts";
 import MyPost from "./MyPosts/Post/MyPost";
@@ -18,7 +9,8 @@ const infoBirth1 = cl.info__birth + " " + cl.info__birth1
 
 let Profile = () => {
     return (
-        <div className={cl.content}>
+        // className={cl.content}
+        <div>
 
             {/*===================================COntent 1 =================================*/}
             <div className={cl.content_1}>

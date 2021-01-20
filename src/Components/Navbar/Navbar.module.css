@@ -19,10 +19,8 @@
     font-size: 14px;
     display: flex;
 
-
-
     align-items: center;
-    transition: color .2s linear;
+
     border-radius: 20px;
     padding: 0 40px;
 
@@ -33,12 +31,21 @@
     font-size: 14px;
     position: relative;
     right: 30px;
+
+    transition: color .2s linear;
+
+    text-decoration: none;
+    color: rgba(0,0,0, 0.9);
 }
 
 .nav__link:hover {
-    color: white;
     cursor: pointer;
     background-color: gray;
+}
+
+.nav__link:hover .nav__name {
+    color: white;
+
 }
 
 
@@ -47,6 +54,8 @@
     color: white;
     fill: white;
 }
+
+
 
 .message {
 

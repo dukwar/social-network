@@ -139,16 +139,21 @@
 .like__button {
     display: flex;
     margin-right: 15px;
+    transition: transform .2s linear;
 
 
 
 }
 
 .like__count {
+
+
   margin-left: 6px;
 }
 
 .share__button {
+    transition: transform .2s linear;
+
 
 }
 
@@ -158,12 +163,22 @@
 
 }
 
+.like__button:hover {
+    transform: translateY(-1px);
+
+}
+
 .like__button:hover .umbrella {
+
     fill:rgba(255,0,0, 0.8);
 }
 
 .share__button:hover .umbrella {
     fill: gray;
+}
+
+.share__button:hover {
+    transform: translateY(-1px);
 }
 
 

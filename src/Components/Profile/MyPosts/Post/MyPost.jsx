@@ -43,7 +43,7 @@ let Post = (props) => {
                         <div className={cl.views__img}>
                             <View />
                         </div>
-                        <div className={cl.views__sum}>110</div>
+                        <div className={cl.views__sum}>5263</div>
                     </div>
 
 

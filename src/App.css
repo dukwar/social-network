@@ -13,19 +13,25 @@
     U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: rgba(169, 169, 169, 0.2);
+    color: lightgray;
+    box-sizing: border-box;
+}
+
+
 h1, h2, h3, h4,h5, p {
     margin: 0;
 }
 
-
 .app-wrapper {
     display: grid;
-
-
     margin: 0 auto;
     max-width: 1200px;
     color: rgba(0,0,0, 0.6);
-
 
 
     grid-template-areas:
@@ -36,27 +42,16 @@ h1, h2, h3, h4,h5, p {
     grid-gap: 10px;
 }
 
+.app-wrapper-content {
+    grid-area: c;
 
 
 
-body {
-
-
-    font-size: 16px ;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    background-color: rgba(169, 169, 169, 0.2);
-color: lightgray;
-    box-sizing: border-box;
 }
 
 
 
 
-
-/* CONTENT =========================================
-====================================================
- */
 
 
 

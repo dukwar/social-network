@@ -1,13 +1,5 @@
 import React from "react";
-import {Music} from "../Profile/Sprite_1";
-import {User} from "../Profile/Sprite_1";
-import {News} from "../Profile/Sprite_1";
-import {Messenger} from "../Profile/Sprite_1";
-import {Photos} from "../Profile/Sprite_1";
-import {Video} from "../Profile/Sprite_1";
-import {Community} from "../Profile/Sprite_1";
-import {Friends} from "../Profile/Sprite_1";
-import {Settings} from "../Profile/Sprite_1";
+import {Music, User, News, Messenger, Photos, Video, Community, Friends, Settings} from "../Profile/Sprite_1";
 import classes from "./Navbar.module.css"
 
 let Navbar = () => {
@@ -15,64 +7,64 @@ let Navbar = () => {
         <nav className={classes.nav}>
             <div className={classes.nav__link}>
                 <div className={classes.message}>
-                   <User />
+                    <User/>
                 </div>
-                <h3 className={classes.nav__name}>Моя страница</h3>
+                <a href="/profile" className={classes.nav__name}>Моя страница</a>
             </div>
             <div className={classes.nav__link}>
                 <div className={classes.message}>
-                    <News />
+                    <News/>
                 </div>
-                <h3 className={classes.nav__name}>Новости</h3>
-            </div>
-
-            <div className={classes.nav__link}>
-                <div className={classes.message}>
-                    <Messenger />
-                </div>
-                <h3 className={classes.nav__name}>Мессенджер</h3>
+                <a  className={classes.nav__name}>Новости</a>
             </div>
 
             <div className={classes.nav__link}>
                 <div className={classes.message}>
-                    <Friends />
+                    <Messenger/>
                 </div>
-                <h3 className={classes.nav__name}>Друзья</h3>
+                <a href="/dialogs" className={classes.nav__name}>Мессенджер</a>
             </div>
 
             <div className={classes.nav__link}>
                 <div className={classes.message}>
-                    <Community />
+                    <Friends/>
                 </div>
-                <h3 className={classes.nav__name}>Сообщества</h3>
+                <a href="" className={classes.nav__name}>Друзья</a>
             </div>
 
             <div className={classes.nav__link}>
                 <div className={classes.message}>
-                    <Photos />
+                    <Community/>
                 </div>
-                <h3 className={classes.nav__name}>Фотографии</h3>
+                <a href="" className={classes.nav__name}>Сообщества</a>
             </div>
 
             <div className={classes.nav__link}>
                 <div className={classes.message}>
-                    <Music />
+                    <Photos/>
                 </div>
-                <h3 className={classes.nav__name}>Музыка</h3>
+                <a href="" className={classes.nav__name}>Фотографии</a>
             </div>
 
             <div className={classes.nav__link}>
                 <div className={classes.message}>
-                    <Video />
+                    <Music/>
                 </div>
-                <h3 className={classes.nav__name}>Видео</h3>
+                <a href="" className={classes.nav__name}>Музыка</a>
             </div>
 
             <div className={classes.nav__link}>
                 <div className={classes.message}>
-                    <Settings />
+                    <Video/>
                 </div>
-                <h3 className={classes.nav__name}>Настройки</h3>
+                <a href="" className={classes.nav__name}>Видео</a>
+            </div>
+
+            <div className={classes.nav__link}>
+                <div className={classes.message}>
+                    <Settings/>
+                </div>
+                <a href="" className={classes.nav__name}>Настройки</a>
             </div>
         </nav>
     )
