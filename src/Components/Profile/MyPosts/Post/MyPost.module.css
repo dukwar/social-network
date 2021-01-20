@@ -1,0 +1,187 @@
+.profile__photo {
+    width: 20%;
+    height: 130px;
+
+    margin-left: 5px;
+    border-radius: 10px;
+    background-size: cover;
+    background-image: url("https://w7.pngwing.com/pngs/636/121/png-transparent-stegosaurus-dinosaur-tyrannosaurus-drawing-dino-leaf-grass-cartoon.png");
+
+}
+
+.content__photo {
+    box-sizing: border-box;
+
+
+    background-color: rgba(255,255,255, 1);
+    width:640px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+    padding: 40px 40px 20px 40px;
+}
+
+.content__post__name {
+    margin-left: 40px;
+    font-weight: 500;
+    color: rgba(169, 169, 169, 1);
+}
+
+.content__post {
+
+
+
+
+
+    height: 50px;
+}
+
+.content__post2 {
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.user__img {
+    background-size: cover;
+    background-image: url("https://sun9-47.userapi.com/impg/1aqOKOVQMjsQLjibugjSQSAvevC5QZ3ATGyenw/qQxHHLZ7pr0.jpg?size=658x1080&quality=96&proxy=1&sign=142d69151315ee51798528a841a51863&type=album");
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user__data {
+    display: flex;
+    align-items: center;
+
+}
+
+.data {
+    margin-left: 20px;
+
+}
+
+.user__name {
+    font-size: 14px;
+
+}
+
+.user__date {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.user__burger {
+    display: flex;
+
+}
+
+.burger {
+    width: 7px;
+    height: 7px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left: 3px;
+
+}
+
+.post__data {
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(169, 169, 169, 0.7);
+
+}
+
+.data__text {
+    font-size: 16px;
+    margin-top: 25px;
+
+}
+
+.data__img {
+    background-position: center;
+    margin-top: 20px;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    /*background-image: url("https://pbs.twimg.com/media/B6DX84hCAAIGQy5.jpg");*/
+
+
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.like__button {
+    display: flex;
+    margin-right: 15px;
+
+
+
+}
+
+.like__count {
+  margin-left: 6px;
+}
+
+.share__button {
+
+}
+
+.umbrella {
+    transition: fill .2s linear;
+    fill: rgb(192,192,192);
+
+}
+
+.like__button:hover .umbrella {
+    fill:rgba(255,0,0, 0.8);
+}
+
+.share__button:hover .umbrella {
+    fill: gray;
+}
+
+
+
+.views {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.views__img {
+    margin-right: 10px;
+
+}
+.views__sum {
+    font-size: 14px;
+
+}
