@@ -5,6 +5,10 @@ import {Like, View} from "../../Sprite_1";
 import {Share} from "../../Sprite_1";
 
 let Post = (props) => {
+
+
+
+
     return (
         <div>
             <div className={cl.content__photo + " " + cl.content__post2}>

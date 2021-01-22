@@ -1,6 +1,7 @@
 import React from "react";
 import {Music, User, News, Messenger, Photos, Video, Community, Friends, Settings} from "../Profile/Sprite_1";
 import classes from "./Navbar.module.css"
+import {NavLink} from "react-router-dom";
 
 let Navbar = () => {
     return (
@@ -9,20 +10,20 @@ let Navbar = () => {
                 <div className={classes.message}>
                     <User/>
                 </div>
-                <a href="/profile" className={classes.nav__name}>Моя страница</a>
+                <NavLink to="/profile" className={classes.nav__name}>Моя страница</NavLink>
             </div>
             <div className={classes.nav__link}>
                 <div className={classes.message}>
                     <News/>
                 </div>
-                <a  className={classes.nav__name}>Новости</a>
+                <a href="/news"  className={classes.nav__name}>Новости</a>
             </div>
 
             <div className={classes.nav__link}>
                 <div className={classes.message}>
                     <Messenger/>
                 </div>
-                <a href="/dialogs" className={classes.nav__name}>Мессенджер</a>
+                <NavLink to="/dialogs" className={classes.nav__name}>Мессенджер</NavLink>
             </div>
 
             <div className={classes.nav__link}>

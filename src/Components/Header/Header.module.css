@@ -1,12 +1,28 @@
 .header {
-    grid-area: h;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
 
     background-color: rgba(255,255,255, 0.9);
+
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
     padding: 10px 20px;
     border-radius: 10px;
-
 }
 
 .logo__name {

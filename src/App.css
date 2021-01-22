@@ -13,6 +13,12 @@
     U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;

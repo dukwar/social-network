@@ -1,0 +1,62 @@
+.dialogs {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: rgba(0,0,0, 0.8);
+
+    padding-top: 5px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.dialogs:hover {
+    background-color: rgba(169, 169, 169, 0.3);
+}
+
+.in__message {
+    font-size: 14px;
+    margin-top: 17px;
+    margin-left: 13px;
+    padding-bottom: 10px;
+}
+
+.line {
+    width: 100%;
+
+    border-bottom: 1px solid rgba(169, 169, 169, 0.3);
+}
+
+.user__photo__left {
+    margin-left: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+
+
+
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+
+.user__photo__left__inner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.name__and__timewrite {
+
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
