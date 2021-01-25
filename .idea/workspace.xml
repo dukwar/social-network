@@ -2,31 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71681da-9742-444a-9416-9689be34b105" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialog/Dialog.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialog/Dialog.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/News/News.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/News/News.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Profile/Profile_Info/Profile_Info.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Profile/Profile_Info/Profile_Info.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/loupe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/magnifying-glass (1).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/phone-call (2).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/Message/Message.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/Message/Message.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/MyPosts/Post/MyPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/MyPosts/Post/MyPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Profile/MyPosts/Post/MyPost.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/MyPosts/Post/MyPost.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Sprite_1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Sprite_1.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile_Info/Profile_Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile_Info/Profile_Info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +92,12 @@
       <workItem from="1611173659414" duration="2669000" />
       <workItem from="1611235350889" duration="10556000" />
       <workItem from="1611246815810" duration="9898000" />
-      <workItem from="1611312566880" duration="19163000" />
+      <workItem from="1611312566880" duration="28235000" />
+      <workItem from="1611410994476" duration="11556000" />
+      <workItem from="1611493755025" duration="9822000" />
+      <workItem from="1611575596064" duration="12696000" />
+      <workItem from="1611601184033" duration="1473000" />
+      <workItem from="1611604474476" duration="75000" />
     </task>
     <servers />
   </component>

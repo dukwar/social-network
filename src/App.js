@@ -11,10 +11,13 @@ import Profile from "./Components/Profile/Profile";
 import Dialogs from "./Components/Dialogs/Dialogs";
 import News from "./Components/News/News";
 
-const App = () => {
+let SomeComponent = () => <News />
+
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
+
 
                 <style>
                     @import
@@ -25,9 +28,12 @@ const App = () => {
 
 
                 <div className="app-wrapper-content">
-                    <Route   path="/profile" component={Profile}/>
-                    <Route  path="/news" component={News}/>
-                    <Route  path="/dialogs" component={Dialogs}/>
+                    <Route   path="/profile" render={()=> <Profile
+                        state = {props.state.profilePage} addPost = {props.addPost} /> }/>
+                    <Route  path="/news" component={SomeComponent}/>
+                    <Route  path="/dialogs" render={()=> <Dialogs
+                       state = {props.state.messagesPage}/> }/>
+
 
 
                 </div>

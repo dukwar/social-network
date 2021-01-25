@@ -4,8 +4,7 @@ import {Music, News, Photos, Video} from "../Sprite_1";
 import MyPosts from "../MyPosts/MyPosts";
 
 
-
-let ProfileInfo = () => {
+let ProfileInfo = (props) => {
     return (
         // className={cl.content}
         <div>
@@ -141,28 +140,11 @@ let ProfileInfo = () => {
                         <div className={cl.profile__photo}></div>
                     </div>
 
-                    {/*===================================COntent-Post =================================*/}
-                    <div className={cl.content__photo + " " + cl.content__post}>
-                        <h5 className={cl.content__post__name}>Что у вас нового?</h5>
-                        <div className={cl.key__input}>
-                            <div className={cl.key__item}>
-                                <Photos/>
-                            </div>
-                            <div className={cl.key__item}>
-                                <Music/>
-                            </div>
-                            <div className={cl.key__item}>
-                                <Video/>
-                            </div>
-                            <div className={cl.key__item}>
-                                <News/>
-                            </div>
-                        </div>
-                    </div>
+
 
 
                     {/*===================================POST =================================*/}
-                    <MyPosts />
+                    <MyPosts posts = {props.posts} addPost = {props.addPost} />
 
                 </div>
 

@@ -9,6 +9,8 @@
 
     background-color: white;
     border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(169, 169, 169, 0.3);
 
 }
 
@@ -28,7 +30,7 @@
 
 .dialog__inner__left {
     width: 35%;
-    font-weight: 300;
+    font-weight: 400;
 
 }
 
@@ -69,6 +71,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 
 
 }
@@ -134,36 +137,53 @@
     left: 35%;
     width: 65%;
     height: 100%;
+    overflow: hidden;
+
 
 }
 
-.messages__inner {
+.input {
     display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 7%;
+
+
+    width: 100%;
+    height: 60px;
+
+    background-color: rgba(169, 169, 169, 0.2);
+    padding: 10px;
+
+
+
+}
+
+.input__inner {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 0 15px;
     margin-left: 30px;
-    margin-top: 10px;
 
 }
 
-.name__and__message {
-    font-size: 14px;
-    margin-left: 10px;
+.input__inner:focus {
+    outline: none;
 }
 
-.message__name {
-    font-weight: 500;
-    margin-bottom: 5px;
-
+.button {
+   margin-left: 30px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
 }
 
-.message__text {
-    margin-bottom: 10px;
-
+.button:focus {
+    outline: none;
 }
 
-.user__photo__right2 {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    background-image: url("https://sun9-47.userapi.com/impg/1aqOKOVQMjsQLjibugjSQSAvevC5QZ3ATGyenw/qQxHHLZ7pr0.jpg?size=658x1080&quality=96&proxy=1&sign=142d69151315ee51798528a841a51863&type=album");
+.button:hover {
+    background-color: rgba(169, 169, 169, 0.3);
 }

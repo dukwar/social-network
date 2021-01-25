@@ -3,6 +3,14 @@
 
 /*}*/
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
 .content_1 {
     width: 100%;
     display: flex;
@@ -73,6 +81,7 @@
     margin-bottom: 20px;
     margin-right: 70px;
     font-weight: 300;
+
     color: rgba(0, 191, 255, 1);
     cursor: pointer;
 }

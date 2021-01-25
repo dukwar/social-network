@@ -10,11 +10,12 @@ import ProfileInfo from "./Profile_Info/Profile_Info";
 const infoBirth1 = cl.info__birth + " " + cl.info__birth1
 
 
-let Profile = () => {
+let Profile = (props) => {
     return (
         // className={cl.content}
         <div>
-            <ProfileInfo />
+
+            <ProfileInfo posts = {props.state.posts} addPost = {props.addPost} />
 
 
 
