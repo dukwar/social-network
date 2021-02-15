@@ -29,7 +29,7 @@ let Post = (props) => {
 
                 <div className={cl.post__data}>
                     <div className={cl.data__text}>{props.message}</div>
-                    <div className={cl.data__img}><img className={cl.data__img} src={props.img} alt=""/></div>
+                    <div className={cl.data__img}><img className={cl.data__img__inner} src={props.img} alt=""/></div>
                 </div>
 
                 <footer className={cl.footer}>

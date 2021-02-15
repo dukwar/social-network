@@ -3,6 +3,7 @@ import cl from "./Dialogs.module.css"
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message"
 import {Call, Search} from "../Profile/Sprite_1";
+import {addMessageActionCreator, onMessageChangeActionCreator} from "../../Redux/message-reducer";
 
 
 
@@ -10,14 +11,22 @@ import {Call, Search} from "../Profile/Sprite_1";
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.state.dialogs.map(dialog => <Dialog name={dialog.name} url={dialog.id} img={dialog.img}/>)
-    let messagesElements = props.state.messages.map(message => <Message name={message.name} message={message.message}/>)
+    let dialogsElements = props.dialogs.map(dialog => <Dialog name={dialog.name} key={dialog.id} url={dialog.id} img={dialog.img}/>)
+    let messagesElements = props.messages.map(message => <Message name={message.name} key={message.id} message={message.message}/>)
 
-    let newMessageElement = React.createRef()
+
 
     let addMessage = () => {
-        let text = newMessageElement.current.value
+        props.addMessage()
+        // props.dispatch(addMessageActionCreator())
 
+
+    }
+
+    let onMessageChange = (event) => {
+        let text = event.target.value
+        props.updateNewMessageText(text)
+        // props.dispatch(onMessageChangeActionCreator(text))
     }
 
     return (
@@ -62,7 +71,7 @@ const Dialogs = (props) => {
                 }
 
                 <div className={cl.input}>
-                    <input ref={newMessageElement} placeholder="Напишите сообщение" className={cl.input__inner} type="text"/>
+                    <input onChange={onMessageChange} value={props.newMessageText}  placeholder="Напишите сообщение" className={cl.input__inner} type="text"/>
                     <button onClick={addMessage} className={cl.button} type="button">Отправить</button>
                 </div>
 

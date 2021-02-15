@@ -9,11 +9,16 @@ import Navbar from "./Components/Navbar/Navbar";
 import Profile from "./Components/Profile/Profile";
 
 import Dialogs from "./Components/Dialogs/Dialogs";
-import News from "./Components/News/News";
+import Friends from "./Components/Friends/Friends";
+import DialogsContainer from "./Components/Dialogs/DialogsContainer";
+import FriendsContainer from "./Components/Friends/FriendsContainer";
+import ProfileContainer from "./Components/Profile/ProfileContainer";
+import HeaderContainer from "./Components/Header/HeaderContainer";
 
-let SomeComponent = () => <News />
+
 
 const App = (props) => {
+
     return (
         <BrowserRouter>
             <div className="app-wrapper">
@@ -23,17 +28,16 @@ const App = (props) => {
                     @import
                     url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
                 </style>
-                <Header/>
+                <HeaderContainer/>
                 <Navbar/>
 
 
                 <div className="app-wrapper-content">
-                    <Route   path="/profile" render={()=> <Profile
-                        state = {props.state.profilePage} addPost = {props.addPost} /> }/>
-                    <Route  path="/news" component={SomeComponent}/>
-                    <Route  path="/dialogs" render={()=> <Dialogs
-                       state = {props.state.messagesPage}/> }/>
+                    <Route path='/profile/:userId' render={() => <ProfileContainer />}/>
 
+                    <Route path="/friends" render={() => <FriendsContainer />}/>
+
+                    <Route path="/dialogs" render={() => <DialogsContainer />}/>
 
 
                 </div>

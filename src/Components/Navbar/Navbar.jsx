@@ -10,7 +10,7 @@ let Navbar = () => {
                 <div className={classes.message}>
                     <User/>
                 </div>
-                <NavLink to="/profile" className={classes.nav__name}>Моя страница</NavLink>
+                <NavLink to='/profile/14898' className={classes.nav__name}>Моя страница</NavLink>
             </div>
             <div className={classes.nav__link}>
                 <div className={classes.message}>
@@ -30,7 +30,7 @@ let Navbar = () => {
                 <div className={classes.message}>
                     <Friends/>
                 </div>
-                <a href="" className={classes.nav__name}>Друзья</a>
+                <NavLink to="/friends" className={classes.nav__name}>Друзья</NavLink>
             </div>
 
             <div className={classes.nav__link}>

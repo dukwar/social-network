@@ -1,0 +1,217 @@
+.displayNone {
+    display: none;
+}
+
+.header {
+    grid-area: h;
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(255,255,255, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+.logo__name {
+    margin-left: 10px;
+}
+
+.header img {
+    width: 40px;
+
+}
+
+.friends__wrapper {
+    width: 750px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.friends__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.friends__active {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    font-size: 14px;
+
+
+}
+
+.all__friends {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    padding: 1px;
+
+
+}
+
+.all__friends:hover {
+    box-shadow: 0 1px 0 0 rgba(169, 169, 169, 1);
+}
+
+.friends__online {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 100%;
+
+}
+
+.friends__online:hover {
+    box-shadow: 0 1px 0 0 rgba(169, 169, 169, 1);
+
+}
+
+.friends__online:visited {
+    box-shadow: none;
+}
+
+.friends__number {
+    margin-left: 5px;
+}
+
+
+.active__line {
+    display: flex;
+
+    width: 240px;
+    position: relative;
+    margin-left: 20px;
+
+}
+
+.active__line__inner {
+
+    position: absolute;
+    bottom: 0;
+    transition: transform .2s linear, width .2s linear;
+
+    width: 103px;
+    height: 2px;
+    background-color: rgba(70, 130, 180, 1);
+}
+
+
+.active__line__now {
+    transform: translateX(113px);
+    width: 120px;
+
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+
+.search__friends {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 15px;
+}
+
+.input {
+    width: 600px;
+    height: 30px;
+    border: none;
+    padding: 0 10px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.parametrs {
+    font-size: 14px;
+    color: rgba(70, 130, 180, 1);
+    cursor: pointer;
+}
+
+.parametrs:hover {
+    box-shadow: 0 1px 0 0 rgba(70, 130, 180, 1);
+}
+
+.friend__wrapper {
+    padding: 0 20px;
+
+}
+
+
+
+
+
+
+.friends__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+
+}
+
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+
+.pagination a {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+    font-weight: 300;
+}
+
+
+.selectedPage {
+    background-color: gray;
+    color: white;
+
+}
+
+.pagination a:hover {
+    background-color: lightgray;
+}
+
+.button {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+
+}
+
+.button:hover {
+    background-color: rgba(169, 169, 169, 1);
+    color: white;
+
+}
+

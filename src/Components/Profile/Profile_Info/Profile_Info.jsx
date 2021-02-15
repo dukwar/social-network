@@ -2,9 +2,15 @@ import React from "react";
 import cl from "../Profile.module.css";
 import {Music, News, Photos, Video} from "../Sprite_1";
 import MyPosts from "../MyPosts/MyPosts";
+import App from "../../../App";
+import MyPostsContainer from "../MyPosts/MyPostsContainer";
+import Preloader from "../../common/Preloader/preloader";
 
 
 let ProfileInfo = (props) => {
+    if (!props.profile) {
+        return <Preloader />
+    }
     return (
         // className={cl.content}
         <div>
@@ -13,8 +19,10 @@ let ProfileInfo = (props) => {
             <div className={cl.content_1}>
 
                 <div className={cl.user__photo}>
+                    <div className={cl.user__photo__inner}>
                     <img className={cl.user__photo2}
-                         src="https://i.pinimg.com/originals/8b/0e/b8/8b0eb841d5ec805fe905b0928bc64980.jpg" alt=""/>
+                         src={props.profile.photos.large} alt=""/>
+                    </div>
                     <div className={cl.redact}>
                         <h4 className={cl.redact__name}>Редактировать</h4>
                     </div>
@@ -27,10 +35,14 @@ let ProfileInfo = (props) => {
 
                 <div className={cl.user__info}>
                     <div className={cl.user__name}>
-                        <h3 className={cl.user__name1}>Дмитрий Клопов</h3>
-                        <h5 className={cl.enter}>заходил 20 минут назад</h5>
+                        <div className={cl.user_name_about}>
+                            <h3 className={cl.user__name1}>{props.profile.fullName}</h3>
+                            <div className={cl.user__about}>{props.profile.aboutMe}</div>
+                        </div>
 
+                        <h5 className={cl.enter}>заходил 20 минут назад</h5>
                     </div>
+
                     <div className={cl.user__regals}>
                         <div className={cl.day__birth}>
                             <h5 className={cl.info__birth}>День рождения:</h5>
@@ -45,8 +57,9 @@ let ProfileInfo = (props) => {
                             <h5 className={cl.info__birth1}>Владимир</h5>
                             <h5 className={cl.info__birth1}>Рифмы и Панчи</h5>
                         </div>
-
                     </div>
+
+
 
                     <div className={cl.social__info}>
                         <div className={cl.social__id}>
@@ -144,7 +157,7 @@ let ProfileInfo = (props) => {
 
 
                     {/*===================================POST =================================*/}
-                    <MyPosts posts = {props.posts} addPost = {props.addPost} />
+                    <MyPostsContainer />
 
                 </div>
 

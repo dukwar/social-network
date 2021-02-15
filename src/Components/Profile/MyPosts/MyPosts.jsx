@@ -1,24 +1,50 @@
-import React from "react";
+ import React from "react";
 import cl from "./MyPosts.module.css"
 import Post from "./Post/MyPost";
 import MyPost from "./Post/MyPost";
 import l from "../Profile.module.css";
 import {Music, News, Photos, Video} from "../Sprite_1";
+ import axios from "axios";
 
 
 
 
 let MyPosts = (props) => {
 
-   let postElements = props.posts.map(post => <MyPost count={post.count} message={post.message} img={post.img} />
+    // axios.post("https://repetitora.net/api/JS/Tasks?widgetId=5345236", {
+    //     title: "Dima"
+    // }).then((response) => {
+    //     debugger
+    //
+    //     console.log(response.data)
+    //     props.addId(response.data.task.id)
+    //
+    // })
+    // axios.get(`https://repetitora.net/api/JS/Tasks?widgetId=5345236&id=${props.newIdPost}`).then((response) => {
+    //
+    //     console.log(response.data.title)
+    // })
+
+
+
+   let postElements = props.posts.map(post => <MyPost count={post.count} key={post.id} message={post.message} img={post.img} />
    )
 
     let newPostElement = React.createRef()
 
-    let addPost = () => {
-       let text = newPostElement.current.value
-        props.addPost(text)
-        newPostElement.current.value = ""
+
+    let onPostChange = () => {
+        let text = newPostElement.current.value
+        props.updateNewPostText(text)
+
+
+    }
+
+    let onAddPost = () => {
+        props.addPost()
+        // props.dispatch(addPostActionCreator())
+
+
 
     }
 
@@ -27,9 +53,9 @@ let MyPosts = (props) => {
        <div>
 
            {/*===================================COntent-Post =================================*/}
-           <div className={l.content__photo + " " + l.content__post}>
-               <input ref={newPostElement} placeholder="Что у вас нового?" className={l.content__post__name}></input>
-               <button onClick={addPost} className={l.content__post__name}>Опубликовать</button>
+           <div className={cl.content__photo + " " + cl.content__post}>
+               <input onChange={onPostChange} value={props.newPostText} ref={newPostElement} placeholder="Что у вас нового?" className={cl.input}></input>
+               <button onClick={onAddPost} className={cl.button}>Опубликовать</button>
                <div className={l.key__input}>
                    <div className={l.key__item}>
                        <Photos/>

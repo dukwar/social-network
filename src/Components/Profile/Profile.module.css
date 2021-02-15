@@ -32,6 +32,11 @@
     margin-left: 35px;
 }
 
+.user_name_about {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .user__name {
     font-weight: 300;
@@ -47,6 +52,12 @@
 
 .user__name1 {
     font-weight: 300;
+}
+
+.user__about {
+    margin-top: 10px;
+    font-size: 14px;
+
 }
 
 .enter {
@@ -131,11 +142,23 @@
     background-color: rgba(255,255,255, 0.9);
     border-radius: 20px;
     padding: 15px 15px;
-    /*background-image: url("https://dogdiary.ru/wp-content/uploads/2018/07/shhenok-zolotistogo-retrivera.jpg");*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
+}
 
+.user__photo__inner {
+    position: relative;
+    width: auto;
+    height: 365px;
+
+
+}
+
+.user__photo2 {
+
+
+
+    width: 100%;
+    height: auto;
+    margin: auto;
 
 }
 
@@ -235,9 +258,6 @@
 }
 
 .content__friends__inner {
-
-
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
