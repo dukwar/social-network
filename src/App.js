@@ -14,6 +14,7 @@ import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 import FriendsContainer from "./Components/Friends/FriendsContainer";
 import ProfileContainer from "./Components/Profile/ProfileContainer";
 import HeaderContainer from "./Components/Header/HeaderContainer";
+import Login from "./Components/Login/Login";
 
 
 
@@ -38,7 +39,7 @@ const App = (props) => {
                     <Route path="/friends" render={() => <FriendsContainer />}/>
 
                     <Route path="/dialogs" render={() => <DialogsContainer />}/>
-
+                    <Route path="/login" render={() => <Login />}/>
 
                 </div>
 

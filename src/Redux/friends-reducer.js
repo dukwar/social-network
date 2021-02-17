@@ -185,5 +185,20 @@ export const unfollowThunkCreator = (id) => {
     }
 }
 
+export const getFriendsSizeThunkCreator = (count, id, currentPage, pageSize) => {
+    return (dispatch) => {
+        dispatch(toggleFollowingProgress(true, id))
+
+        dispatch(updateFriends(count))
+        UsersAPI.getUsers(currentPage, pageSize).then((data) => {
+            dispatch(setUsers(data.items))
+            dispatch(toggleFollowingProgress(false, id))
+        })
+
+    }
+}
+
+
+
 export default friendsReducer
 

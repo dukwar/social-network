@@ -38,6 +38,7 @@ export let HeadersApi = {
 
 export let ProfileApi = {
     setUser (userId) {
+
         return instance.get(`profile/${userId}`,)
             .then(response => response.data)
     }

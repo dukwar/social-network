@@ -3,15 +3,10 @@ import cl from "./Friend.module.css"
 import {NavLink} from "react-router-dom";
 
 
-
-
-
 let Friend = (props) => {
 
     let follow = () => {
-
         props.followThunkCreator(props.f.id)
-
 
     }
 
@@ -21,14 +16,13 @@ let Friend = (props) => {
     }
 
 
-
-
     return (
         <div className={cl.user__wrapper}>
             <div>
                 <NavLink to={'/profile/' + props.f.id}>
-                <img className={cl.userPhoto} src="https://www.kindpng.com/picc/m/78-786678_avatar-hd-png-download.png"
-                     alt=""/>
+                    <img className={cl.userPhoto}
+                         src="https://www.kindpng.com/picc/m/78-786678_avatar-hd-png-download.png"
+                         alt=""/>
                 </NavLink>
 
             </div>
@@ -40,15 +34,16 @@ let Friend = (props) => {
 
             <div>
                 {props.f.followed
-                    ? <button disabled={props.followingInProgress.some(id => id === props.f.id)} className={cl.button} onClick={unfollow}>Отписаться</button>
-                    : <button disabled={props.followingInProgress.some(id => id === props.f.id)} className={cl.button} onClick={follow}>Добавить в друзья</button>}
+                    ? <button disabled={props.followingInProgress.some(id => id === props.f.id)} className={cl.button}
+                              onClick={unfollow}>Отписаться</button>
+                    : <button disabled={props.followingInProgress.some(id => id === props.f.id)} className={cl.button}
+                              onClick={follow}>Добавить в друзья</button>}
             </div>
             <div className={cl.burger}>
                 <div className={cl.burger__inner}></div>
                 <div className={cl.burger__inner}></div>
                 <div className={cl.burger__inner}></div>
             </div>
-
 
 
         </div>

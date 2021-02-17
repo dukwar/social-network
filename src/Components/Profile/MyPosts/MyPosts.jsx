@@ -11,20 +11,6 @@ import {Music, News, Photos, Video} from "../Sprite_1";
 
 let MyPosts = (props) => {
 
-    // axios.post("https://repetitora.net/api/JS/Tasks?widgetId=5345236", {
-    //     title: "Dima"
-    // }).then((response) => {
-    //     debugger
-    //
-    //     console.log(response.data)
-    //     props.addId(response.data.task.id)
-    //
-    // })
-    // axios.get(`https://repetitora.net/api/JS/Tasks?widgetId=5345236&id=${props.newIdPost}`).then((response) => {
-    //
-    //     console.log(response.data.title)
-    // })
-
 
 
    let postElements = props.posts.map(post => <MyPost count={post.count} key={post.id} message={post.message} img={post.img} />
@@ -42,9 +28,6 @@ let MyPosts = (props) => {
 
     let onAddPost = () => {
         props.addPost()
-        // props.dispatch(addPostActionCreator())
-
-
 
     }
 

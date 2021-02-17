@@ -2,45 +2,42 @@ import React from "react";
 import {addMessageActionCreator, onMessageChangeActionCreator} from "../../Redux/message-reducer";
 import Dialogs from "./Dialogs";
 import {connect} from "react-redux";
+import {compose} from "redux";
+import {withAuthRedirect} from "../HOC/AuthRedirect";
 
 
 
 
 
-// const DialogsContainer = () => {
-//
-//
-//     return (
-//         <StoreContext.Consumer>
-//             {
-//             (store) => {
-//                 let state = store.getState()
-//
-//                 let addMessage = () => {
-//                     // props.addMessage(text)
-//                    store.dispatch(addMessageActionCreator())
-//                 }
-//
-//                 let onMessageChange = (text) => {
-//
-//                     // props.updateNewMessageText(text)
-//                     store.dispatch(onMessageChangeActionCreator(text))
-//                 }
-//
-//                 return (
-//                     <Dialogs updateNewMessageText={onMessageChange}
-//                              addMessage={addMessage}
-//                              dialogs={state.messagesPage.dialogs}
-//                              messages={state.messagesPage.messages}
-//                              newMessageText={state.messagesPage.newMessageText}/>
-//                 )
-//             }
-//
-//         }
-//
-//         </StoreContext.Consumer>
-//     )
-// }
+class DialogsContainer extends React.Component {
+
+    addMessage = () => {
+        this.props.addMessage()
+
+    }
+
+   onMessageChange = (event) => {
+        let text = event.target.value
+        this.props.updateNewMessageText(text)
+    }
+    render() {
+
+
+
+        return (
+            <Dialogs
+                     addMessage={this.addMessage}
+                     dialogs={this.props.dialogs}
+                     messages={this.props.messages}
+                     newMessageText={this.props.newMessageText}
+                     onMessageChange={this.onMessageChange}/>
+
+        )
+    }
+}
+
+
+
 
 let mapStateToProps = (state) => {
     return {
@@ -63,7 +60,10 @@ let mapDispatchToProps = (dispatch) => {
     }
 }
 
+export default compose(
+    connect(mapStateToProps, mapDispatchToProps),
+    withAuthRedirect
+)(DialogsContainer)
 
-const MessagesContainer = connect(mapStateToProps, mapDispatchToProps) (Dialogs)
 
-export default MessagesContainer
+

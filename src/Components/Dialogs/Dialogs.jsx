@@ -16,18 +16,7 @@ const Dialogs = (props) => {
 
 
 
-    let addMessage = () => {
-        props.addMessage()
-        // props.dispatch(addMessageActionCreator())
 
-
-    }
-
-    let onMessageChange = (event) => {
-        let text = event.target.value
-        props.updateNewMessageText(text)
-        // props.dispatch(onMessageChangeActionCreator(text))
-    }
 
     return (
         <div className={cl.container}>
@@ -71,8 +60,8 @@ const Dialogs = (props) => {
                 }
 
                 <div className={cl.input}>
-                    <input onChange={onMessageChange} value={props.newMessageText}  placeholder="Напишите сообщение" className={cl.input__inner} type="text"/>
-                    <button onClick={addMessage} className={cl.button} type="button">Отправить</button>
+                    <input onChange={props.onMessageChange} value={props.newMessageText}  placeholder="Напишите сообщение" className={cl.input__inner} type="text"/>
+                    <button onClick={props.addMessage} className={cl.button} type="button">Отправить</button>
                 </div>
 
 

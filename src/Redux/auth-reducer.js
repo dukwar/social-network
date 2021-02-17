@@ -1,3 +1,5 @@
+import {HeadersApi} from "../api/api";
+
 let SET_USER_DATA = 'SET_USER_DATA';
 let UNFOLLOW = 'UNFOLLOW';
 
@@ -10,9 +12,6 @@ let initialState = {
     login: null,
     isAuth: false,
     isFetching: true
-
-
-
 }
 
 
@@ -47,6 +46,19 @@ const authReducer = (state = initialState, action) => {
 
 
 export const setUserData = (userId, email, login) => ({type: SET_USER_DATA, data: {userId, email, login}})
+
+export let authUserThunkCreator = () => {
+    return (dispatch) => {
+        HeadersApi.authUser().then((data) => {
+
+            if (data.resultCode === 0) {
+
+                let {id, login, email} = data.data
+               dispatch(setUserData(id, email, login))
+            }
+        })
+    }
+}
 
 export default authReducer
 

@@ -1,3 +1,5 @@
+import {ProfileApi} from "../api/api";
+
 let ADD_POST = 'ADD-POST';
 let UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 let ADD_ID_POST = 'ADD_ID_POST'
@@ -63,6 +65,7 @@ const profileReducer = (state = initialState, action) => {
             }
 
         case SET_USER_PROFILE:
+            debugger
             return {
                 ...state,
                 profile: action.profile
@@ -84,6 +87,16 @@ export const addPostActionCreator = () => ({type: ADD_POST})
 export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text})
 export const addIdPostAC = (id) => ({type: ADD_ID_POST, newId: id})
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile})
+
+
+export let profileThunkCreator = (userId) => {
+    return (dispatch) => {
+        ProfileApi.setUser(userId).then((data) => {
+            dispatch(setUserProfile(data))
+
+        })
+    }
+}
 
 
 

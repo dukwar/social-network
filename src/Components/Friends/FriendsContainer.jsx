@@ -9,7 +9,12 @@ import {
     updateFriends,
     setCurrentPage,
     setTotalUsersCount,
-    toggleIsFetching, toggleFollowingProgress, getUsersThunkCreator, followThunkCreator, unfollowThunkCreator,
+    toggleIsFetching,
+    toggleFollowingProgress,
+    getUsersThunkCreator,
+    followThunkCreator,
+    unfollowThunkCreator,
+    getFriendsSizeThunkCreator,
 } from "../../Redux/friends-reducer";
 import Friends from "./Friends";
 import axios from "axios";
@@ -18,6 +23,9 @@ import Friend from "./Friend/Friend";
 import Rolling from '../../img/Rolling.svg'
 import Preloader from "../common/Preloader/preloader";
 import {UsersAPI} from "../../api/api";
+import {Redirect} from "react-router-dom";
+import {withAuthRedirect} from "../HOC/AuthRedirect";
+import {compose} from "redux";
 
 
 class FriendsC extends React.Component {
@@ -36,7 +44,6 @@ class FriendsC extends React.Component {
     }
 
     pageEnd = 0
-
     onPageChanged = (page, event) => {
 
         this.props.setCurrentPage(page)
@@ -80,6 +87,7 @@ class FriendsC extends React.Component {
 
 
         let end = this.pageEnd + 10
+
         let newPages = pages.slice(this.pageEnd, end)
 
         // this.pagination(pages)
@@ -105,6 +113,7 @@ class FriendsC extends React.Component {
                 followingInProgress={this.props.followingInProgress}
                 followThunkCreator = {this.props.followThunkCreator}
                 unfollowThunkCreator={this.props.unfollowThunkCreator}
+                isAuth={this.props.isAuth}
             />
         </>
 
@@ -121,10 +130,32 @@ let mapStateToProps = (state) => {
         totalFriendsCount: state.friendsPage.totalFriendsCount,
         currentPage: state.friendsPage.currentPage,
         isFetching: state.friendsPage.isFetching,
-        followingInProgress: state.friendsPage.followingInProgress
-
+        followingInProgress: state.friendsPage.followingInProgress,
+        isAuth: state.auth.isAuth
     }
 }
+
+export default compose(
+    connect(mapStateToProps, {
+        updateLine,
+        updateLine2,
+        updateFriends,
+        setCurrentPage,
+        setTotalUsersCount,
+        toggleIsFetching,
+        toggleFollowingProgress,
+        getUsersThunkCreator,
+        followThunkCreator,
+        unfollowThunkCreator,
+        getFriendsSizeThunkCreator,
+    }),
+    withAuthRedirect
+
+) (FriendsC)
+
+
+
+
 
 // let mapDispatchToProps = (dispatch) => {
 //     return {
@@ -169,18 +200,3 @@ let mapStateToProps = (state) => {
 // }
 
 
-export default connect(mapStateToProps, {
-    follow,
-    unfollow,
-    setUsers,
-    updateLine,
-    updateLine2,
-    updateFriends,
-    setCurrentPage,
-    setTotalUsersCount,
-    toggleIsFetching,
-    toggleFollowingProgress,
-    getUsersThunkCreator,
-    followThunkCreator,
-    unfollowThunkCreator
-}) (FriendsC)

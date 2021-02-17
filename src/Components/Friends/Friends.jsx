@@ -4,6 +4,7 @@ import axios from "axios";
 import user_photo from "../../img/user_photo.jpg"
 import Friend from "./Friend/Friend";
 import {Search} from "../Profile/Sprite_1";
+import {Redirect} from "react-router-dom"
 import {followThunkCreator, toggleFollowingProgress} from "../../Redux/friends-reducer";
 
 
@@ -29,12 +30,15 @@ const Friends = (props) => {
 
     let pages = []
 
+
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i)
     }
 
     let end = props.pageEnd + 10
     let newPages = pages.slice(props.pageEnd, end)
+
+    if (!props.isAuth) return <Redirect to={"/login"} />
 
 
 
@@ -77,10 +81,10 @@ const Friends = (props) => {
             </div>
 
             <div className={cl.friends__navigation}>
-                <button onClick={props.f1} className={cl.button}>Показать больше</button>
+                {/*<button onClick={props.f1} className={cl.button}>Показать больше</button>*/}
                 <div className={cl.pagination}>
                     {newPages.map((page) => {
-                        return <a onClick={(event) =>props.onPageChanged(page, event)}
+                        return <a onClick={(event) => props.onPageChanged(page, event)}
                                   className={props.currentPage === page && cl.selectedPage}>{page}</a>
                     })}
                 </div>
